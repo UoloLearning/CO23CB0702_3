@@ -1,4 +1,11 @@
-for i in range(1, 6):
-    for j in range(i):
-        print('*', end='')
-    print()
+string = input("Enter a string: ")
+i = 0
+
+while i < len(string):
+    if string[i] == " ":
+        break
+    if string[i] == "":
+        i += 1
+        continue
+    print(string[i])
+    i += 1
