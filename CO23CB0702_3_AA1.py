@@ -1,8 +1,5 @@
-for i in range(10):
-    num = int(input("Enter a number: "))
-
-    if num > 100:
-        print("Number greater than 100 entered. Exiting loop.")
-        break
-    else:
-        print(num)
+s = input("Enter a string: ")
+i = 0
+while i < len(s) and s[i] != ' ':
+    print(s[i])
+    i += 1
